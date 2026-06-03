@@ -1,0 +1,19 @@
+{
+  "name": "ArcNoordNederland",
+  "version": "1.0.0",
+  "description": "A WordPress blog theme using Tailwind CSS",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i src/input.css -o assets/css/main.css --watch",
+    "sync": "browser-sync start --proxy 'http://localhost/wordpress' --files '**/*.php, assets/css/*.css, assets/js/*.js'",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./assets/css/main.css --minify"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "@tailwindcss/postcss": "^4.2.4",
+    "postcss": "^8.5.14",
+    "tailwindcss": "^4.2.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4"
+  }
+}
